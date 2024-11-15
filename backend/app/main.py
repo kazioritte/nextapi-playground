@@ -19,3 +19,7 @@ def read_item(item_id: int):
 @app.post("/items/")
 def create_item(item: Item):
     return item
+
+@app.get("/deploy_now")
+def get_deploy_now():
+    return {"value": "Deploy now"}
